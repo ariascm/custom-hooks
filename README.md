@@ -25,13 +25,13 @@ decrement(value): decrementa por value (default 1).
 
 reset(): reinicia al valor inicial.
 
-### 2. `useCounter`
+### 2. `useFetch`
 
 Realiza peticiones HTTP y gestiona estados de carga, error y caché local.
 
 #### Uso:
 
-const { data, isLoading, hasError } = useFetch('https://pokeapi.co/api/v2/pokemon/1')
+const { data, isLoading, hasError } = useFetch(URL)
 
 #### Retorna:
 data: respuesta de la API.
@@ -88,9 +88,11 @@ pendingTodosCount: cantidad de tareas pendientes.
 
 ## 🛠 Instalación y uso
 git clone https://github.com/ariascm/custom-hooks.git
-cd custom-hooks
-npm install
-npm run dev
+
+cd custom-hooks 
+npm install 
+npm run dev 
+
 Este repo está pensado como utilidad o ejemplo para ser usado dentro de otros proyectos React.
 
 📁 Estructura del proyecto css
